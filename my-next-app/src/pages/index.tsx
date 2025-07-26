@@ -16,7 +16,14 @@ import { VideoCard } from "@/components/VideoCard";
 export default function Home() {
   return (
     <div>
-      <VideoCard></VideoCard>
+      <VideoCard
+        title="this is harkirat video"
+        image="photo.png"
+        tumbimg="photo.png"
+        name="harkirat"
+        views="25k"
+        ago="1 day ago"
+      ></VideoCard>
     </div>
   );
 }
