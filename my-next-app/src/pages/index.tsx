@@ -1,7 +1,9 @@
 // import Image from "next/image";
 // import { Geist, Geist_Mono } from "next/font/google";
 
+import { Appbar } from "@/components/AppBar";
 import { VideoCard } from "@/components/VideoCard";
+import { VideoGrid } from "@/components/VideoGrid";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -16,14 +18,8 @@ import { VideoCard } from "@/components/VideoCard";
 export default function Home() {
   return (
     <div>
-      <VideoCard
-        title="this is harkirat video"
-        image="photo.png"
-        tumbimg="photo.png"
-        name="harkirat"
-        views="25k"
-        ago="1 day ago"
-      ></VideoCard>
+      <Appbar></Appbar>
+      <VideoGrid></VideoGrid>
     </div>
   );
 }
